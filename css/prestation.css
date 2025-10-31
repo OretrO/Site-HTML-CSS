@@ -1,0 +1,55 @@
+#body {
+    padding: 50px 0;
+}
+div.begin h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 15%;
+    margin: 15px auto
+}
+
+div.list {
+    width: 60%;
+    margin: auto;
+}
+
+div.list h2 {
+    font-size: 36px;
+    margin: 45px 0 15px 0;
+}
+
+div.list ul {
+    list-style-type: none;
+}
+
+div.list ul li .wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div.list ul li .wrap .card {
+    width: 45%;
+    border-radius: 3px;
+    border: 1px solid #0004;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.list .wrap .card img {
+    aspect-ratio: 1/1;
+    width: 150px;
+}
+
+.list .wrap .card h3 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    font-family: 'Crimson Text', serif;
+}

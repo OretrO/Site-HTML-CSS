@@ -1,0 +1,443 @@
+#header .navbar .flag img {
+  aspect-ratio: 1/1;
+  width: var(--size-titl2);
+}
+
+h1 {
+  font-size: var(--size-title);
+  font-family: "Crimson Text", serif;
+}
+h2 {
+  font-size: var(--size-titl2);
+  font-family: "Crimson Text", serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+div.grosImage {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+.grosImage img {
+  height: 100vh;
+  width: 100%;
+}
+
+div.tmoche {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.grosImage .p {
+  color: #fff;
+  font-size: 55px;
+  text-align: right;
+  position: absolute;
+  right: 10%;
+  bottom: 180px;
+}
+.grosImage .p p {
+  background: #000c;
+  display: inline-block;
+  margin: 1px 0;
+}
+
+.grosImage p a {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Nos Animations */
+
+div.animation {
+  display: flex;
+  justify-content: center;
+}
+
+.animation div.letter {
+  width: 1000px;
+}
+
+.letter div.title {
+  padding: 0 0 15px 0;
+}
+
+.letter .title p {
+  margin: 10px 0;
+  font-size: calc(var(--size-titl2) - 6px);
+  font-weight: 500;
+}.letter .title p::before {
+  content: "\00a0 \00a0 ";
+}
+
+.letter .title h1 {
+  font-family: "Cormin Text", serif;
+}
+
+.letter > div + div {
+  background: var(--color-bege);
+}
+
+.letter div.topOfLetter,
+.letter div.bottomOfLetter {
+  height: 200px;
+  border: 2px solid black;
+  transition: 2s;
+}
+
+.letter div.topOfLetter {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.topOfLetter img {
+  z-index: 2;
+  height: 100px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  animation: pickme 3s infinite;
+  transition: 1s;
+}
+.letter.open .topOfLetter img {
+  margin: 0 0 30px 0;
+  transform: translateY(50%);
+  animation: none;
+}
+
+@keyframes pickme {
+  from {
+    transform: translateY(50%) rotate(0);
+  }
+  30% {
+    transform: translateY(50%) rotate(0);
+  }
+  35% {
+    transform: translateY(50%) rotate(0);
+  }
+  45% {
+    transform: translateY(50%) rotate(10deg);
+  }
+  50% {
+    transform: translateY(50%) rotate(5deg);
+  }
+  55% {
+    transform: translateY(50%) rotate(10deg);
+  }
+  60% {
+    transform: translateY(50%) rotate(5deg);
+  }
+  65% {
+    transform: translateY(50%) rotate(10deg);
+  }
+  75% {
+    transform: translateY(50%) rotate(0);
+  }
+  to {
+    transform: translateY(50%) rotate(0);
+  }
+}
+
+.letter div.contentLetter {
+  z-index: -1;
+  width: 990px;
+  margin: 0 5px;
+  padding: 20px 0;
+  position: absolute;
+  background: #e6ddc5ef; /* = var(bege) opacity-- */
+}
+.letter.open .contentLetter {
+  animation: wait 2s linear;
+  z-index: 1;
+}
+
+@keyframes wait {
+  from {
+    z-index: -1;
+  }
+  99% {
+    z-index: -1;
+  }
+  to {
+    z-index: 1;
+  }
+}
+
+.contentLetter div.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+}
+
+.contentLetter div.item {
+  width: calc(100% / 3);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentLetter .cage a{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-nwar);
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.contentLetter .cage img {
+  height: 220px;
+  width: 200px;
+}
+
+.contentLetter .cage .info {
+  text-align: center;
+  width: 100%;
+  background: var(--color-bord);
+  color: var(--color-blan);
+  padding: 5px 0;
+}
+
+.letter.open div.bottomOfLetter {
+  margin: 586px 0 0 0;
+}
+
+/* Actualités */
+
+div.actu {
+  display: flex;
+  justify-content: center;
+  background: var(--color-blan);
+  padding: 30px 0;
+}
+
+.actu div.container {
+  width: 60%;
+}
+
+.actu div.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actu .wall {
+  display: flex;
+  border: 1px solid var(--color-nwar);
+}
+
+.actu .content .wall img.wall {
+  width: 400px;
+  aspect-ratio: 1/1;
+}
+
+.actu .content .wall .paper img {
+  width: 100px;
+  box-shadow: 0 0 6px #000000;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.actu .content .wall .paper img:hover {
+  box-shadow: 0 0 3px #fff8;
+}
+
+.actu .wall div.paper {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  gap: 15px;
+  transform: translate(40px, 40px);
+}
+
+.actu div.new {
+  width: calc(80% - 400px);
+}
+
+.new .switchNews {
+  margin: 15px 10px;
+  padding: 5px 10px;
+}
+
+.switchNews h3 {
+  margin: 0 0 10px 0;
+  font-family: 'Crimson Text', serif;
+}
+.switchNews p {
+  margin: 0 0 5px 0;
+  font-family: 'Crimson Text', serif;
+}
+.switchNews .l1::after {
+  cursor: text;
+  content: "Bonjour & bienvenue !";
+}
+.switchNews .l2::after {
+  cursor: text;
+  content: "Découvrez sur votre gauche nos affiches, sur lesquelles vous retrouverez toutes les nouveautés.";
+}
+.switchNews .l3::after {
+  cursor: text;
+  content: "Cliquez dessus pour voir de plus près !";
+}
+
+.switchNews.x1 .l1::after {
+  content: "Shopping au Moyen-Âge !";
+}
+.switchNews.x1 .l2::after {
+  content: "Du samedi 21 au vendredi 27 décembre, venez au musée Théophile Lambert pour un marché interactif et vivant en plein 14e siècle.";
+}
+.switchNews.x1 .l3::after {
+  content: "C'est l'occasion de découvrir une vaste collection d'objets intéressants lors de cette expérience immersive en famille.";
+}
+
+.switchNews.x2 .l1::after {
+  content: "Sous les projecteurs !";
+}
+.switchNews.x2 .l2::after {
+  content: "Du 2 au 27 janvier 2025, nous faisons une pause pour tourner un court métrage captivant réalisé par Bérengère Trude. Nous resterons tout de même disponibles par téléphone.";
+}
+.switchNews.x2 .l3::after {
+  content: "Nous recherchons d'ailleurs quelques figurants pour les journées du 16 et 18 janvier, disponibles toute la journée de 10h à 18h. Venez vivre l'aventure avec nous, votre participation est la bienvenue !";
+}
+
+.switchNews.x3 .l1::after {
+  content: "À ne pas manquer !";
+}
+.switchNews.x3 .l2::after {
+  content: "De nouveaux costumes sont arrivés pour les besoins de nos prochains spectacles. Nous avons désormais la possibilité de représenter les habitants et cavaliers des 6e et 7e siècles.";
+}
+.switchNews.x3 .l3::after {
+  content: "Ces costumes seront disponibles à la location cet hiver, et le reste de l'année sur demande. Contactez-nous pour plus d'informations !";
+}
+
+.switchNews.x4 .l1::after {
+  content: "Du nouveau dans la famille !";
+}
+.switchNews.x4 .l2::after {
+  content: "Ce mercredi 11, Juliette, notre jument, a donné vie à Léon, un magnifique poulain.";
+}
+.switchNews.x4 .l3::after {
+  content: "Ils seront transférés et confiés à l'une de nos associations partenaires au plus tôt, là où Léon pourra grandir aux côtés de sa mère.";
+}
+
+.switchNews.x5 .l1::after {
+  content: "Tristan de retour !";
+}
+.switchNews.x5 .l2::after {
+  content: "Après 4 jours de convalescence, depuis sa performance au sein de l'arène, c'est ce vendredi 6 décembre que Tristan, notre cavalier, reprend les répétitions à nos côtés.";
+}
+.switchNews.x5 .l3::after {
+  content: "Il sera sur scène avant la fin du mois. Il sera également présent au musée de T. Lambert pour jouer le rôle d'un commerçant.";
+}
+
+.switchNews.x6 .l1::after {
+  content: "TOP SECRET (pas vraiment) !";
+}
+.switchNews.x6 .l2::after {
+  content: "Mardi 24 décembre, vous êtes conviés au 8 rue Victor Hugo pour un événement spécial. L'entrée sera gratuite.";
+}
+.switchNews.x6 .l3::after {
+  content: "C'est un moment à ne pas rater : comédie, gastronomie, découverte totale, vous serez en immersion dans un autre monde, d'une autre époque. Une date à ne surtout pas manquer !";
+}
+
+/* Lieu */
+
+div.lieu {
+  padding: 30px 0;
+}
+
+.lieu div.container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lieu h2 {
+  margin: 0 0 5px 0;
+}
+
+.lieu div.ur {
+  text-align: center;
+}
+
+.lieu div.our {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lieu .our div.slideOnSide {
+  margin: 25px 0 10px 0;
+  height: 250px;
+  width: 60%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.lieu .our .listImg {
+  display: flex;
+  width: 250px;
+}
+
+.slideOnSide .gradient {
+  margin: 0 0 0 35%;
+  width: 10%;
+  height: 250px;
+  position: absolute;
+  display: flex;
+  background: linear-gradient(to left, #fff, #fff0);
+}
+
+.lieu .our .listImg div.item {
+  border-inline: 1px solid black;
+  width: 250px;
+}
+
+.lieu .our .listImg img {
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+
+/* n'existe pas */
+
+div#secret {
+  position: sticky;
+  top: 65%;
+  z-index: 9;
+}
+
+div#secret img {
+  width: 200px;
+  position: absolute;
+  right: -300px;
+  transform: rotate(-130deg);
+}
+
+header.malik + div#secret {
+  top: 45%;
+  transition: 1s;
+}
+
+header.malik + div#secret img {
+  right: -70px;
+  transform: rotate(-99deg);
+  transition: 1s;
+}

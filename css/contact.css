@@ -1,0 +1,98 @@
+div.c_global {
+    background: #f9f9f9;
+}
+
+div.c_teamDev,
+div.c_global {
+    display: flex;
+    justify-content: center;
+}
+
+.c_title {
+    width: 50%;
+    margin: 30px;
+}
+
+.c_title h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.formulaire {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire ul {
+    list-style-type: none;
+    width: 700px;
+}
+
+.formulaire ul li {
+    border: 1px solid #0002;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formulaire input {
+    border: none;
+    border-bottom: 1px solid #0009;
+}
+
+.formulaire textarea {
+    border: none;
+    border-bottom: 1px solid #0009;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.formulaire fieldset {
+    border: none;
+    }
+.formulaire fieldset div {
+    margin-top: 25px;
+}
+
+.c_global input,
+.c_global textarea,
+.c_global {
+    background: #fafafa;
+}
+
+.formulaire div.button {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    cursor: pointer;
+}
+
+button.check {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background: #fff;
+    box-shadow: 0 0 5px #0004;
+}
+
+button.check:hover {
+    background: #fafafa;
+}
+
+button.reset {
+    border: none;
+    background: none;
+}

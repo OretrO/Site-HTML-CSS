@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Chevalier Jadis</title>
+    <link rel="stylesheet" href="../css/_.css" >
+    <link rel="stylesheet" href="../css/style.css" >
+    <script src="../js/_.js"></script>
+    <script src="../js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header id="header">
+      <!-- fait le 29 novembre -->
+      <nav>
+        <div class="hamburger" id="hamburger" onclick="open_slidebar()">
+          <div class="salad top"></div>
+          <div class="salad mid"></div>
+          <div class="salad bot"></div>
+        </div>
+        <div id="slidebar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <!-- mise à jour des textes pour plus d'enthousiasme & d'engagement -->
+            <li><a href="#letter">Events & Activities</a></li>
+            <li><a href="#switchNews">Discover the news</a></li>
+            <li><a href="#footer">Exceptional sites & locations</a></li>
+            <li><a href="#footer">Footer</a></li>
+          </ul>
+          <div class="logo">
+            <a href="#">
+              <img src="../img/logo.png" alt="logo chevalier jadis"
+            ></a>
+          </div>
+        </div>
+        <div class="sword" id="sword" onclick="open_slidebar()">
+          <img src="../img/icon_sword.png" alt="crossed sword" >
+        </div>
+      </nav>
+      <div class="navbar" id="navbar">
+        <h1 class="crimson-text-bold"><a href="#">Chevalier</a></h1>
+        <ul>
+          <li>
+            <a href="../html/prestation.html">Service</a>
+          </li>
+          <!-- ajout des attribut 'title' à la dernière minute -->
+          <li>
+            <a href="../html/us.html">About us</a>
+          </li>
+          <li>
+            <a href="../html/contact.html">Contact</a>
+          </li>
+          <li class="flag">
+            <a href="../index.html">
+              <img src="../img/flag_uk.png" alt="united kingdom's flag">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div id="secret">
+      <!-- ça c'est un petit easter egg, interdiction de tricher !! -->
+      <!-- fait en toute fin de projet -->
+      <a href="../html/secret.html">
+        <img src="../img/easter_egg/corne.png" alt="unicorn horn" >
+      </a>
+    </div>
+    <!-- là c'est la fin du secret -->
+
+    <div id="body">
+      <div class="grosImage">
+        <img src="../img/accueil_cavalier_joute.jpg" alt="knight photo" >
+        <!-- image de fond en page d'accueil, mise le 7 décembre -->
+        <div class="tmoche">
+          <div class="p">
+            <p>Welcome to our world !</p>
+            <br>
+            <!-- texte changer début décembre, pour une meilleure énergie -->
+            <p><a href="#letter">Start your adventure !</a></p>
+          </div>
+        </div>
+      </div>
+      <div style="height: 95vh"></div>
+      <!-- Comble le vide de l'image qui est en position absolute sinon les div qui suivent se cache derrière et c'est pas le but -->
+
+      <div class="animation">
+        <!-- tout a été fait en décembre -->
+        <div class="letter" id="letter">
+          <div class="title">
+            <p>Here is a letter for you.</p>
+            <h1>Our events & activities</h1>
+          </div>
+
+          <div class="topOfLetter">
+            <img
+              src="../img/cachet_de_cire.png"
+              alt="wax seal"
+              class="cachetCire"
+              onclick="open_letter()"
+            >
+            <!-- ajout de la fonction une fois le design terminée -->
+          </div>
+
+          <div class="contentLetter">
+            <div class="wrap">
+              <div class="item">
+                <div class="cage">
+                  <a href="../html/prestation.html#animal">
+                    <img
+                      src="../img/animation/1.png"
+                      alt="animals with their owner"
+                    >
+                    <!-- ajout des images en fin de projet également -->
+                    <div class="info">Our animals</div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cage">
+                  <a href="../html/prestation.html#fire">
+                    <img
+                      src="../img/animation/2.png"
+                      alt="Mixed duo of fire breathers"
+                    >
+                    <div class="info">Fire breathers</div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cage">
+                  <a href="../html/prestation.html#making">
+                    <img
+                      src="../img/animation/3.png"
+                      alt="Educational workshop on armory with children"
+                    >
+                    <div class="info">Educational workshop</div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cage">
+                  <a href="../html/prestation.html#party">
+                    <img
+                      src="../img/animation/4.png"
+                      alt="3 friends dressed up, having fun and laughing in a field"
+                    >
+                    <div class="info">Medieval festival</div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cage">
+                  <a href="../html/prestation.html#fight">
+                    <img
+                      src="../img/animation/5.png"
+                      alt="2 knights supporting each other in the middle of a battlefield"
+                    >
+                    <div class="info">Battlefield</div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cage">
+                  <a href="../html/prestation.html#food">
+                    <img
+                      src="../img/animation/6.png"
+                      alt="Dining hall filled with a feast and people eating"
+                    >
+                    <div class="info">Medieval feast</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomOfLetter"></div>
+          <!-- div avec des modifications en css pour occupée de la place et simuler la partie basse de la lettre avec le cachet de cire -->
+        </div>
+      </div>
+
+      <div class="actu">
+        <div class="container">
+          <div class="title">
+            <h1>Our latest news</h1>
+          </div>
+
+          <div class="content">
+            <div class="wall">
+              <img
+                src="../img/mur_texturee.jpg"
+                alt="Textured stone wall"
+                class="wall"
+              >
+              <div class="paper">
+                <!-- initialement pas prévu comme cliquable, l'idée est venue ensuite. Donc les "onclick dans les images ont été ajouter à la toute fin" -->
+                <img
+                  src="../img/papier_sur_le_mur/1.png"
+                  alt="ancient paper with writing on it : musée | museum"
+                  style="transform: rotate(2deg) translateY(-7px)"
+                  onclick="this_news(this)"
+                  class="x1"
+                >
+                <img
+                  src="../img/papier_sur_le_mur/2.png"
+                  alt="ancient paper with writing on it : Hollywood"
+                  style="transform: rotate(-1deg) translateY(3px)"
+                  onclick="this_news(this)"
+                  class="x2"
+                >
+                <img
+                  src="../img/papier_sur_le_mur/3.png"
+                  alt="ancient paper with writing on it : Nouvelle Tenue | new outfit"
+                  style="transform: rotate(-3deg) translateX(4px)"
+                  onclick="this_news(this)"
+                  class="x3"
+                >
+                <img
+                  src="../img/papier_sur_le_mur/4.png"
+                  alt="ancient paper with writing on it : Un Cheval en Or | an horse in gold"
+                  style="transform: rotate(-8deg) translate(-8px, 19px)"
+                  onclick="this_news(this)"
+                  class="x4"
+                >
+                <img
+                  src="../img/papier_sur_le_mur/5.png"
+                  alt="ancient paper with writing on it : Tristan de retour | Tristan is back"
+                  style="transform: rotate(4deg) translateY(7px)"
+                  onclick="this_news(this)"
+                  class="x5"
+                >
+                <img
+                  src="../img/papier_sur_le_mur/6.png"
+                  alt="ancient paper with writing on it : TOP SECRET"
+                  style="transform: rotate(-178deg) translate(-13px, -6px)"
+                  onclick="this_news(this)"
+                  class="x6"
+                >
+              </div>
+            </div>
+            <div class="new">
+              <!-- ici on peux voir des balises vides. Le texte initialement dedans à était supprimé du HTML pour l'ajouté dans le CSS et pouvoir le modifier plus simplement -->
+              <h2>At this moment :</h2>
+              <div class="switchNews" id="switchNews">
+                <h3 class="l1">&ensp;</h3>
+                <p class="l2"></p>
+                <p class="l3"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lieu">
+        <!-- fait début décembre -->
+        <div class="container">
+          <div class="ur">
+            <!-- puis changement du texte à la fin pour concorder avec la charte éditorial -->
+            <h2>A place already chosen ? Perfect !</h2>
+            <p>In that case, we are here to guide you and create an event perfectly tailored to enhance this location. <br>
+                And if you are looking for an exceptional place, we also have venues ready to host this project!
+            </p>
+          </div>
+          <div class="our">
+            <h2>No place planned ? No problem !</h2>
+            <p>
+                We have many unique venues at our disposal that can be tailored to whatever you wish to organize.
+            </p>
+            <div class="slideOnSide">
+              <div class="gradient"></div>
+              <div class="listImg">
+                <div class="item">
+                  <img src="../img/lieu/1.png" alt="courtyard of a castle" >
+                </div>
+                <div class="item">
+                  <img src="../img/lieu/2.png" alt="a deserted combat arena" >
+                </div>
+                <div class="item">
+                  <img
+                    src="../img/lieu/3.png"
+                    alt="a grand dining hall, like in a castle"
+                  >
+                </div>
+                <div class="item">
+                  <img src="../img/lieu/4.png" alt="a castle garden" >
+                </div>
+                <div class="item">
+                  <img src="../img/lieu/5.png" alt="an empty marketplace street" >
+                </div>
+                <div class="item">
+                  <img
+                    src="../img/lieu/6.png"
+                    alt="dining hall for royal guests"
+                  >
+                </div>
+                <div class="item">
+                  <img src="../img/lieu/7.png" alt="a weapons workshop" >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <!-- fait le 29 novembre -->
+      <div class="container">
+        <div class="prefoot">
+          <div class="logo">
+            <a href="#">
+              <img src="../img/logo.png" alt="logo : Chevalier Jadis" >
+              <!-- le logo a été ajouter en fin de projet -->
+            </a>
+          </div>
+          <div class="contact">
+            <h2>Contact us !</h2>
+            <ul>
+              <li>
+                <a href="#footer">
+                  <div><img src="../img/icon_mail.png" alt="icon email" ></div>
+                  jadischevalier@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#footer">
+                  <div>
+                    <img src="../img/icon_instagram.png" alt="icon instagram" >
+                  </div>
+                  chevalierjadis01
+                </a>
+              </li>
+              <li>
+                <a href="#footer">
+                  <div>
+                    <img src="../img/icon_facebook.png" alt="icon facebook" >
+                  </div>
+                  jadis_chevalier
+                </a>
+              </li>
+              <li>
+                <a href="#footer">
+                  <div>
+                    <img src="../img/icon_whatsapp.png" alt="icon téléphone" >
+                  </div>
+                  +33 7 69 29 77 67
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="srcNav">
+            <h2>Navigation</h2>
+            <ul>
+              <li><a href="./english_index.html">index</a></li>
+              <li><a href="../html/prestation.html">service</a></li>
+              <li><a href="../html/us.html">about us</a></li>
+              <li><a href="../html/contact.html">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="details">
+          <!-- ici il y a eu une modification vers la fin du projet pour ajouter les onclick, fait en même temps que le div.secret -->
+          <ul>
+            <li>
+                Developed by
+              <span class="malik" onclick="easter_egg(this)">Malik</span>,
+              <span class="nathan" onclick="easter_egg(this)">Nathan</span> &
+              <span class="jabir" onclick="easter_egg(this)">Jabir</span>
+            </li>
+            <li>Copyright &copy; 2024 Chevalier Jadis</li>
+            <li>Legal notice</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

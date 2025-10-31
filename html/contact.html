@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Chevalier Jadis</title>
+    <link rel="stylesheet" href="../css/_.css" >
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/_.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header id="header">
+      <!-- fait le 29 novembre -->
+      <nav>
+        <div class="hamburger" id="hamburger" onclick="open_slidebar()">
+          <div class="salad top"></div>
+          <div class="salad mid"></div>
+          <div class="salad bot"></div>
+        </div>
+        <div id="slidebar">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <!-- mise à jour des textes pour plus d'enthousiasme & d'engagement -->
+            <li><a href="#global">Contactez-nous</a></li>
+            <li><a href="#dev">Contactez l'équipe de gestion du site</a></li>
+            <li><a href="#footer">Bas de page</a></li>
+          </ul>
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="logo chevalier jadis">
+            </a>
+          </div>
+        </div>
+        <div class="sword" id="sword" onclick="open_slidebar()">
+          <img src="../img/icon_sword.png" alt="épée croisée" >
+        </div>
+      </nav>
+      <div class="navbar" id="navbar">
+        <h1 class="crimson-text-bold"><a href="../index.html">Chevalier</a></h1>
+        <ul>
+          <li>
+            <a href="prestation.html">Prestation</a
+            >
+          </li>
+          <!-- ajout des attribut 'title' à la dernière minute -->
+          <li>
+            <a href="us.html">&Agrave; propos</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" style="text-decoration: underline;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+
+    <div id="body">
+
+      <div class="c_global" id="global">
+        <div>
+          <div class="c_title">
+            <h2 style="font-size: 40px">Un renseignement ? <br> Un devis ? </h2>
+          </div>
+          <div class="formulaire">
+            <form action="#" method="post">
+              <ul>
+                <li>
+                  <label for="g_name">Prénom & Nom</label>
+                  <input type="text" name="g_name" id="g_name" placeholder="Votre réponse..." required>
+                </li> 
+                <li>
+                  <label for="g_mail">Votre adresse mail</label>
+                  <input type="text" name="g_mail" id="g_mail" placeholder="Votre réponse..." required>
+                </li>
+                <li>
+                  <label for="g_desc">Entrez votre message</label>
+                  <textarea name="g_desc" id="g_desc" placeholder="Votre réponse..." required></textarea>
+                </li>
+              </ul>
+              <div class="button">
+                <button type="submit" class="check">Envoyez</button>
+                <button type="reset" class="reset">Réintialiser</button>
+              </div>
+            </form>
+          </div>    
+        </div>
+      </div>
+
+      <div class="c_teamDev" id="dev">
+        <div>
+          <div class="c_title">
+            <h2>Contactez l'&eacute;quipe de gestion du site ?</h2>
+            <p>Vous souhaitez signaler une information erronée <br> à corriger ou une modification nécessaire en rapport avec le site web ?</p>
+          </div>
+          <div class="formulaire">
+            <form action="#" method="post">
+              <ul>
+                <li>
+                  <label for="dev_name">Prénom & Nom</label>
+                  <input type="text" name="dev_name" id="dev_name" placeholder="Votre réponse..." required>
+                </li> 
+                <li>
+                  <label for="dev_mail">Votre adresse mail</label>
+                  <input type="text" name="dev_mail" id="dev_mail" placeholder="Votre réponse..." required>
+                </li>
+                <li>
+                  <fieldset>
+                    <legend>Raison de votre message</legend>
+                    <div>
+                      <input type="radio" name="dev_reason" id="dev_error" checked>
+                      <label for="dev_error">Vous pensez avoir repéré une erreur sur une des pages du site</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="dev_reason" id="dev_change">
+                      <label for="dev_change">Vous souhaitez suggérer une modification/amélioration sur le site</label>
+                    </div>
+                  </fieldset>
+                </li>
+                <li>
+                  <label for="dev_desc">Entrez votre message</label>
+                  <textarea name="dev_desc" id="dev_desc" placeholder="Votre réponse..." required></textarea>
+                </li>
+              </ul>
+              <div class="button">
+                <button type="submit" class="check">Envoyez</button>
+                <button type="reset" class="reset">Réintialiser</button>
+              </div>
+            </form>
+          </div>    
+        </div>
+      </div>
+      
+      
+    </div> <!-- fin div#body -->
+    
+    
+    
+    
+  <footer id="footer">
+      <!-- fait le 29 novembre -->
+      <div class="container">
+        <div class="prefoot">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="logo : Chevalier Jadis" >
+              <!-- le logo a été ajouter en fin de projet -->
+            </a>
+          </div>
+          <div class="contact">
+            <h2>Contactez-nous !</h2>
+            <ul>
+              <li>
+                <a href="#footer">
+                  <div><img src="../img/icon_mail.png" alt="icon email" ></div>
+                  jadischevalier@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#footer">
+                  <div>
+                    <img src="../img/icon_instagram.png" alt="icon instagram" >
+                  </div>
+                  chevalierjadis01
+                </a>
+              </li>
+              <li>
+                <a href="#footer">
+                  <div>
+                    <img src="../img/icon_facebook.png" alt="icon facebook" >
+                  </div>
+                  jadis_chevalier
+                </a>
+              </li>
+              <li>
+                <a href="#footer">
+                  <div>
+                    <img src="../img/icon_whatsapp.png" alt="icon téléphone" >
+                  </div>
+                  +33 7 69 29 77 67
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="srcNav">
+            <h2>Navigation</h2>
+            <ul>
+              <li><a href="../index.html">index</a></li>
+              <li><a href="prestation.html">prestation</a></li>
+              <li><a href="us.html">&agrave; propos</a></li>
+              <li><a href="./contact.html">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="details">
+          <!-- ici il y a eu une modification vers la fin du projet pour ajouter les onclick, fait en même temps que le div.secret -->
+          <ul>
+            <li>
+              D&eacute;veloppé par
+              <span class="malik" onclick="easter_egg(this)">Malik</span>,
+              <span class="nathan" onclick="easter_egg(this)">Nathan</span> &
+              <span class="jabir" onclick="easter_egg(this)">Jabir</span>
+            </li>
+            <li>Copyright &copy; 2024 Chevalier Jadis</li>
+            <li>Mentions l&eacute;gales</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
